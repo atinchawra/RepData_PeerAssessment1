@@ -40,9 +40,10 @@ mean_steps_per_interval<-aggregate(steps~interval,actO,mean)
 plot(mean_steps_per_interval$interval,mean_steps_per_interval$steps,type="l",main="Average number of steps taken",xlab="Interval",ylab="Mean steps")
 max_steps_interval<-subset(mean_steps_per_interval,steps==max(steps))
 abline(v=max_steps_interval$interval,col="red")
+
 ```
 
-Interval `r max_steps_interval` contains the maximum number of steps. It is also displayed on the above graph
+Interval `r max_steps_interval$interval` contains the maximum number of steps. It is also displayed on the above graph
 
 
 ## Imputing missing values

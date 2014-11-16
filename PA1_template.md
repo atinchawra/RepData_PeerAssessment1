@@ -48,7 +48,7 @@ barplot(total_steps_each_day$steps,main="Total number of steps taken each day",x
 
 ![](./PA1_template_files/figure-html/unnamed-chunk-3-1.png) 
 
-Mean of total steps is 1.0766189\times 10^{4}  
+Mean of total steps is 1.076619\times 10^{4}  
 Median of total steps is 10765
 
 
@@ -64,7 +64,7 @@ abline(v=max_steps_interval$interval,col="red")
 
 ![](./PA1_template_files/figure-html/unnamed-chunk-4-1.png) 
 
-Interval 835, 206.1698113 contains the maximum number of steps. It is also displayed on the above graph
+Interval 835 contains the maximum number of steps. It is also displayed on the above graph
 
 
 ## Imputing missing values
@@ -109,7 +109,8 @@ barplot(total_steps_each_day2$steps,main="Total steps taken each day",xlab="Days
 ![](./PA1_template_files/figure-html/unnamed-chunk-7-1.png) 
 
 Mean of total steps per day is 9354.2295082  
-Median of total steps per day is 10395  
+Median of total steps per day is 10395    
+So, these values differ from values calculated above. Essentially, these values are smaller.  
 
 
 ## Are there differences in activity patterns between weekdays and weekends?
