@@ -96,6 +96,7 @@ abline(v=max_steps_interval$interval,col=&quot;red&quot;)</code></pre>
 <div id="imputing-missing-values" class="section level2">
 <h2>Imputing missing values</h2>
 <p>The total number of missing values in the original dataset is 2304</p>
+<p>The strategy is to replace NA with the mean of that day.</p>
 <pre class="r"><code>na_indices&lt;-which(is.na(actO$steps))
 mean_steps_each_day&lt;-aggregate(steps~date,actO,mean,na.rm=T,na.action=na.pass)
 actM&lt;-actO

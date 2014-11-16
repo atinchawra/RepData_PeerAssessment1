@@ -50,6 +50,8 @@ Interval `r max_steps_interval$interval` contains the maximum number of steps. I
 
 The total number of missing values in the original dataset is `r length(which(is.na(actO$steps)))`
 
+
+The strategy is to replace NA with the mean of that day.  
 ```{r}
 na_indices<-which(is.na(actO$steps))
 mean_steps_each_day<-aggregate(steps~date,actO,mean,na.rm=T,na.action=na.pass)

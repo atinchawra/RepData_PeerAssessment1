@@ -72,6 +72,8 @@ Interval 835 contains the maximum number of steps. It is also displayed on the a
 The total number of missing values in the original dataset is 2304
 
 
+The strategy is to replace NA with the mean of that day.  
+
 ```r
 na_indices<-which(is.na(actO$steps))
 mean_steps_each_day<-aggregate(steps~date,actO,mean,na.rm=T,na.action=na.pass)
